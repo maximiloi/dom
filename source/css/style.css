@@ -668,3 +668,45 @@ button {
     font-size: 25px;
     line-height: 27px;
     text-align: center; }
+
+.call__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  text-align: center;
+  position: relative; }
+  .call__wrapper:before {
+    position: absolute;
+    content: url("../img/sec-6/boiler.png");
+    bottom: -5px;
+    left: 0; }
+  .call__wrapper:after {
+    position: absolute;
+    content: url("../img/sec-6/leaf.png");
+    bottom: -5px;
+    right: 0; }
+
+.call__border {
+  position: absolute;
+  width: 98.5%;
+  height: 95%;
+  top: 9px;
+  left: 9px;
+  border: 0.5px solid #EBEBEB;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+.call__title {
+  padding-top: 35px; }
+
+.call__text {
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 32px; }
+
+.call__button {
+  margin-bottom: 60px; }

@@ -1,0 +1,38 @@
+.call
+  &__wrapper
+    max-width: $desktop-width
+    margin: 0 auto
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.04)
+    border-radius: 5px
+    text-align: center
+    position: relative
+    &:before
+      position: absolute
+      content: url($img + '/sec-6/boiler.png')
+      bottom: -5px
+      left: 0
+    &:after
+      position: absolute
+      content: url($img + '/sec-6/leaf.png')
+      bottom: -5px
+      right: 0
+  &__border
+    position: absolute
+    width: 98.5%
+    height: 95%
+    top: 9px
+    left: 9px
+    border: 0.5px solid #EBEBEB
+    border-radius: 4px
+    box-sizing: border-box
+  &__title
+    padding-top: 35px
+  &__text
+    width: 660px
+    margin: 0 auto
+    margin-top: 20px
+    margin-bottom: 30px
+    font-size: 28px
+    line-height: 32px
+  &__button
+    margin-bottom: 60px
