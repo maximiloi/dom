@@ -1,0 +1,42 @@
+.card
+  &__list
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    height: 495px
+    background: $text-white
+  &__item
+    height: 232px
+    &--big
+      height: 495px
+    &:nth-child(1)
+      margin-right: 20px
+      width: 355px
+      background: no-repeat 50% 50% url($img + '/sec-3/card1.png')
+    &:nth-child(2)
+      margin-right: 20px
+      margin-bottom: 30px
+      width: 370px
+      background: no-repeat 50% 50% url($img + '/sec-3/card2.png')
+      color: $text-white
+    &:nth-child(3)
+      margin-right: 20px
+      width: 470px
+      background: no-repeat 50% 50% url($img + '/sec-3/card4.png')
+    &:nth-child(4)
+      margin-left: -90px
+      margin-bottom: 30px
+      width: 387px
+      background: no-repeat 50% 50% url($img + '/sec-3/card3.png')
+    &:nth-child(5)
+      width: 300px
+      background: no-repeat 50% 50% url($img + '/sec-3/card5.png')
+  &__title
+    padding-top: 27px
+    padding-bottom: 15px
+    padding-left: 27px
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+  &__text
+    padding-left: 27px

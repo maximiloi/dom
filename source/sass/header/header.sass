@@ -1,0 +1,28 @@
+.header
+  background: url($img + '/sec-1/cloud-up.png')
+  &__wrapper
+    max-width: $desktop-width
+    margin: 0 auto
+    padding-top: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__contact
+    display: flex
+    flex-direction: column
+  &__phone
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: $text-black
+  &__callback
+    margin-left: 50px
+    width: 136px
+    color: $span-green
+    border-bottom: 1px dashed $span-green
+    cursor: pointer
+    &:hover,
+    &:focus
+      color: $text-black
+      border-bottom: 1px dashed $text-black
