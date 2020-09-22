@@ -1,0 +1,39 @@
+.services
+  padding-top: 150px
+  padding-bottom: 110px
+  &__wrapper
+    max-width: $desktop-width
+    margin: 0 auto
+  &__title
+    text-align: center
+  &__list
+    display: flex
+    justify-content: space-around
+  &__item
+    position: relative
+    width: 220px
+    margin-top: 210px
+    &:before
+      position: absolute
+      z-index: -1
+    &:nth-child(1):before
+      content: url($img+'/sec-5/building.png')
+      bottom: -40px
+      left: -85px
+    &:nth-child(2):before
+      content: url($img+'/sec-5/sale-house.png')
+      bottom: -14px
+      left: -55px
+    &:nth-child(3):before
+      content: url($img+'/sec-5/repair.png')
+      bottom: -48px;
+      left: -123px;
+    &:nth-child(4):before
+      content: url($img+'/sec-5/sites.png')
+      bottom: -32px;
+      left: -112px;
+  &__text
+    font-weight: 500
+    font-size: 25px
+    line-height: 27px
+    text-align: center

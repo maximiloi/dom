@@ -570,3 +570,101 @@ button {
 
 .card__text {
   padding-left: 27px; }
+
+.sale__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 110px; }
+
+.sale__title {
+  text-align: center; }
+
+.sale__list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between; }
+
+.sale__item {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.11);
+  border-radius: 5px; }
+
+.sale__button {
+  display: block;
+  margin: 30px;
+  width: 83%; }
+
+.house {
+  position: relative; }
+  .house__border {
+    position: absolute;
+    width: 95%;
+    height: 97%;
+    top: 9px;
+    left: 9px;
+    border: 0.5px solid #EBEBEB;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  .house__name {
+    margin: 20px 20px 10px 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px; }
+  .house__list {
+    margin: 0 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px; }
+  .house__specification {
+    display: flex; }
+  .house__title, .house__adress {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: #636363; }
+  .house__adress {
+    position: relative;
+    margin-left: 10px; }
+    .house__adress:before {
+      position: absolute;
+      content: url("../img/sec-4/map-pin.svg");
+      left: -15px; }
+
+.services {
+  padding-top: 150px;
+  padding-bottom: 110px; }
+  .services__wrapper {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .services__title {
+    text-align: center; }
+  .services__list {
+    display: flex;
+    justify-content: space-around; }
+  .services__item {
+    position: relative;
+    width: 220px;
+    margin-top: 210px; }
+    .services__item:before {
+      position: absolute;
+      z-index: -1; }
+    .services__item:nth-child(1):before {
+      content: url("../img/sec-5/building.png");
+      bottom: -40px;
+      left: -85px; }
+    .services__item:nth-child(2):before {
+      content: url("../img/sec-5/sale-house.png");
+      bottom: -14px;
+      left: -55px; }
+    .services__item:nth-child(3):before {
+      content: url("../img/sec-5/repair.png");
+      bottom: -48px;
+      left: -123px; }
+    .services__item:nth-child(4):before {
+      content: url("../img/sec-5/sites.png");
+      bottom: -32px;
+      left: -112px; }
+  .services__text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 27px;
+    text-align: center; }

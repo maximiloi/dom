@@ -1,0 +1,35 @@
+.house
+  position: relative
+  &__border
+    position: absolute
+    width: 95%
+    height: 97%
+    top: 9px
+    left: 9px
+    border: 0.5px solid #EBEBEB
+    border-radius: 4px
+    box-sizing: border-box
+  &__name
+    margin: 20px 20px 10px 20px
+    font-weight: 500
+    font-size: 22px
+    line-height: 29px
+  &__list
+    margin: 0 20px
+    font-weight: normal
+    font-size: 18px
+    line-height: 24px
+  &__specification
+    display: flex
+  &__title,
+  &__adress
+    margin-right: 5px
+    margin-bottom: 10px
+    color: $text-gray
+  &__adress
+    position: relative
+    margin-left: 10px
+    &:before
+      position: absolute
+      content: url($img + '/sec-4/map-pin.svg')
+      left: -15px
