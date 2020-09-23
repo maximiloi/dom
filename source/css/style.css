@@ -596,12 +596,13 @@ button {
 
 .house {
   position: relative; }
-  .house__border {
+  .house:before {
     position: absolute;
-    width: 95%;
-    height: 97%;
-    top: 9px;
-    left: 9px;
+    content: '';
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 10px;
+    left: 10px;
     border: 0.5px solid #EBEBEB;
     border-radius: 4px;
     box-sizing: border-box; }
@@ -689,13 +690,12 @@ button {
 
 .call__border {
   position: absolute;
-  width: 98.5%;
-  height: 95%;
-  top: 9px;
-  left: 9px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
   border: 0.5px solid #EBEBEB;
-  border-radius: 4px;
-  box-sizing: border-box; }
+  border-radius: 5px; }
 
 .call__title {
   padding-top: 35px; }
@@ -710,3 +710,215 @@ button {
 
 .call__button {
   margin-bottom: 60px; }
+
+.map {
+  padding-top: 180px; }
+  .map__wrapper {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .map__title {
+    text-align: center;
+    font-weight: 700; }
+  .map__text {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center; }
+
+.stages {
+  padding-top: 180px; }
+  .stages__wrapper {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .stages__title {
+    text-align: center; }
+  .stages__list {
+    max-width: 710px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap; }
+  .stages__item {
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+    padding: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+    .stages__item:nth-child(2n) {
+      margin-right: 0; }
+    .stages__item:before {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-weight: 500;
+      font-size: 46px;
+      line-height: 44px;
+      color: #00CD66; }
+    .stages__item:nth-child(1):before {
+      content: '01'; }
+    .stages__item:nth-child(2):before {
+      content: '02'; }
+    .stages__item:nth-child(3):before {
+      content: '03'; }
+    .stages__item:nth-child(4):before {
+      content: '04'; }
+    .stages__item:after {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      content: '';
+      border: 0.5px solid #EBEBEB;
+      box-sizing: border-box;
+      border-radius: 5px; }
+  .stages__subtitle {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px; }
+  .stages__flex {
+    margin-top: 60px;
+    display: flex;
+    align-items: center; }
+    .stages__flex--text {
+      position: relative;
+      max-width: 290px; }
+      .stages__flex--text:before {
+        position: absolute;
+        top: -8px;
+        left: -57px;
+        content: url("../img/sec-8/arrow.png"); }
+  .stages__button {
+    margin-right: 60px; }
+
+.proposition {
+  padding-top: 200px; }
+  .proposition__wrapper {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.04);
+    border-radius: 5px; }
+    .proposition__wrapper:after {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      content: '';
+      border: 0.5px solid #EBEBEB;
+      box-sizing: border-box;
+      border-radius: 5px; }
+  .proposition__title {
+    max-width: 565px;
+    font-weight: 500;
+    padding-top: 65px;
+    padding-left: 50px; }
+  .proposition__text {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px; }
+    .proposition__text strong {
+      font-weight: 500; }
+  .proposition__button {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 55px; }
+
+.footer {
+  position: relative; }
+
+.contact {
+  display: none; }
+  .contact__map {
+    overflow: hidden;
+    padding-top: 150px; }
+  .contact__wrapper {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 586px);
+    max-width: 470px;
+    width: 100%;
+    max-height: 490px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+    .contact__wrapper:before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      content: '';
+      border: 0.5px solid #EBEBEB;
+      box-sizing: border-box;
+      border-radius: 5px; }
+  .contact__title {
+    padding-top: 50px;
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px; }
+  .contact__list {
+    margin-top: 60px;
+    margin-left: 70px;
+    z-index: 2;
+    position: relative; }
+  .contact__item {
+    margin-bottom: 30px; }
+    .contact__item--phone a {
+      position: relative;
+      color: #000000;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 24px; }
+      .contact__item--phone a:before {
+        position: absolute;
+        display: block;
+        content: '';
+        background-image: url("../img/sec-10/phone-call.svg");
+        background-size: 21px 21px;
+        width: 21px;
+        height: 21px;
+        left: -30px; }
+    .contact__item--map {
+      font-size: 25px;
+      line-height: 24px; }
+      .contact__item--map:before {
+        position: absolute;
+        display: block;
+        content: '';
+        background-image: url("../img/sec-10/pin.svg");
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        left: -30px; }
+    .contact__item--instagram {
+      font-size: 25px;
+      line-height: 24px; }
+      .contact__item--instagram:before {
+        position: absolute;
+        display: block;
+        content: '';
+        background-image: url("../img/sec-10/instagram.svg");
+        background-size: 21px 21px;
+        width: 21px;
+        height: 21px;
+        left: -30px; }
+  .contact__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px; }

@@ -86,7 +86,6 @@
         <h2 class="sale__title">Дома <strong>в продаже</strong></h2>
         <ul class="sale__list">
           <li class="sale__item  house">
-            <div class="house__border"></div>
             <img src="/img/sec-4/house-1.jpg" alt="" class="house__pic">
             <h3 class="house__name">Дом 1</h3>
             <ul class="house__list">
@@ -104,7 +103,6 @@
             <button class="sale__button  button">Подробнее</button>
           </li>
           <li class="sale__item  house">
-            <div class="house__border"></div>
             <img src="/img/sec-4/house-1.jpg" alt="" class="house__pic">
             <h3 class="house__name">Дом 1</h3>
             <ul class="house__list">
@@ -122,7 +120,6 @@
             <button class="sale__button  button">Подробнее</button>
           </li>
           <li class="sale__item  house">
-            <div class="house__border"></div>
             <img src="/img/sec-4/house-1.jpg" alt="" class="house__pic">
             <h3 class="house__name">Дом 1</h3>
             <ul class="house__list">
@@ -177,63 +174,76 @@
 
     <!-- sec-7 -->
     <section class="map">
-      <h2 class="map__title">Расположение</h2>
-      <p class="map__text">Мы строим дома <span class="green">с развитой инфраструктурой</span></p>
-
+      <div class="map__wrapper">
+        <h2 class="map__title">Расположение</h2>
+        <p class="map__text">Мы строим дома <span class="green">с развитой инфраструктурой</span></p>
+        <!-- <img src="http://place-puppy.com/1170x450" alt="Placeholder Puppy"> -->
+      </div>
     </section>
 
     <!-- sec-8 -->
     <section class="stages">
-      <h2 class="stages__title"><span class="bold">Этапы работы</span> с нашими клиентами</h2>
-      <ul class="stages__list">
-        <li class="stages__item">
-          <h3 class="stages__subtitle">Осмотр дома</h3>
-          <p class="stages__text">Мы проведём экскурсию по готовому дому или продемонстрируем процесс строительства</p>
-        </li>
-        <li class="stages__item">
-          <h3 class="stages__subtitle">Задаток</h3>
-          <p class="stages__text">Мы заключаем предварительный договор купли-продажи, где фиксируем сумму задатка
-            размером 100 тысяч рублей </p>
-        </li>
-        <li class="stages__item">
-          <h3 class="stages__subtitle">Встреча в офисе</h3>
-          <p class="stages__text">Мы назначим встречу в офисе для дальнейшего заключения договора</p>
-        </li>
-        <li class="stages__item">
-          <h3 class="stages__subtitle">Встреча в банке</h3>
-          <p class="stages__text"></p>
-        </li>
-      </ul>
       <div class="stages__wrapper">
-        <button class="stages__button  button">Пример договора</button>
-        <p class="stages__text">Хотите узнать больше о договоре? <span class="green">Просто скачайте его!</span></p>
+        <h2 class="stages__title"><strong>Этапы работы</strong> с нашими клиентами</h2>
+        <ul class="stages__list">
+          <li class="stages__item">
+            <h3 class="stages__subtitle">Осмотр дома</h3>
+            <p class="stages__text">Мы проведём экскурсию по готовому дому или продемонстрируем процесс строительства
+            </p>
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__subtitle">Задаток</h3>
+            <p class="stages__text">Мы заключаем предварительный договор купли-продажи, где фиксируем сумму задатка
+              размером 100 тысяч рублей </p>
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__subtitle">Встреча в офисе</h3>
+            <p class="stages__text">Мы назначим встречу в офисе для дальнейшего заключения договора</p>
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__subtitle">Встреча в банке</h3>
+            <p class="stages__text"></p>
+          </li>
+        </ul>
+        <div class="stages__flex">
+          <button class="stages__button  button">Пример договора</button>
+          <p class="stages__flex--text">Хотите узнать больше о договоре? <span class="green">Просто скачайте его!</span>
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- sec-9 -->
     <section class="proposition">
-      <h2 class="proposition__title">Приобретайте недвижимость <span class="green">по выгодным условиям</span></h2>
-      <p class="proposition__text">Оставьте свой номер телефона и мы позвоним Вам в ближайшее время</p>
-      <button class="proposition__button  button">Заказать звонок</button>
+      <div class="proposition__wrapper">
+        <h2 class="proposition__title">Приобретайте недвижимость <span class="green">по выгодным условиям</span></h2>
+        <p class="proposition__text"><strong>Оставьте свой номер телефона</strong><br> и мы позвоним Вам в ближайшее
+          время</p>
+        <button class="proposition__button  button">Заказать звонок</button>
+      </div>
     </section>
 
+  </main>
+
+
+  <footer class="footer">
     <!-- sec-10 -->
     <section class="contact">
-      <div class="contact__map"></div>
+      <div class="contact__map">
+        <img src="http://place-puppy.com/1920x670" alt="Placeholder Puppy">
+      </div>
       <div class="contact__wrapper">
         <h2 class="contact__title">Остались вопросы? <span class="green">Наши контакты</span></h2>
         <ul class="contact__list">
-          <li class="contact__list"><a href="tel:+79886215777">+8 (988) 621 5777</a></li>
-          <li class="contact__list">г. Анапа, ул.Крымская, 177</li>
-          <li class="contact__list"><a href="#" target="_blank" class="instagram"></a> @topdom_anapa</li>
+          <li class="contact__item  contact__item--phone"><a href="tel:+79886215777">+8 (988) 621 5777</a></li>
+          <li class="contact__item  contact__item--map">г. Анапа, ул.Крымская, 177</li>
+          <li class="contact__item  contact__item--instagram"><a href="#" target="_blank" class="instagram"></a> @topdom_anapa</li>
         </ul>
         <button class="contact__button  button">Связаться с нами</button>
       </div>
     </section>
-  </main>
 
-  <!-- sec-11 -->
-  <footer class="footer">
+    <!-- sec-11 -->
     <div class="footer__wrapper">
       <img src="/img/logo.png" alt="" class="footer__logo  logo">
       <a href="" class="footer__link">Реквизиты нашей компании</a>

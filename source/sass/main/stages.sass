@@ -1,0 +1,71 @@
+.stages
+  padding-top: 180px
+  &__wrapper
+    max-width: $desktop-width
+    margin: 0 auto
+  &__title
+    text-align: center
+  &__list
+    max-width: 710px
+    margin-top: 80px
+    display: flex
+    flex-wrap: wrap
+  &__item
+    position: relative
+    max-width: 280px
+    width: 100%
+    padding: 30px
+    margin-right: 20px
+    margin-bottom: 20px
+    background: $text-white
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    &:nth-child(2n)
+      margin-right: 0
+    &:before
+      position: absolute
+      top: 30px
+      right: 30px
+      font-weight: 500
+      font-size: 46px
+      line-height: 44px
+      color: $span-green
+    &:nth-child(1):before
+      content: '01'
+    &:nth-child(2):before
+      content: '02'
+    &:nth-child(3):before
+      content: '03'
+    &:nth-child(4):before
+      content: '04'
+    &:after
+      position: absolute
+      top: 10px
+      left: 10px
+      display: block
+      width: calc(100% - 20px)
+      height: calc(100% - 20px)
+      content: ''
+      border: 0.5px solid #EBEBEB
+      box-sizing: border-box
+      border-radius: 5px
+  &__subtitle
+    margin-bottom: 15px
+    font-weight: 500
+    font-size: 22px
+    line-height: 24px
+  &__flex
+    margin-top: 60px
+    display: flex
+    align-items: center
+    &--text
+      position: relative
+      max-width: 290px
+      &:before
+        position: absolute
+        top: -8px
+        left: -57px
+        content: url($img + '/sec-8/arrow.png')
+  &__button
+    margin-right: 60px
+  

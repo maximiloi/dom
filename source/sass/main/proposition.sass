@@ -1,0 +1,38 @@
+.proposition
+  padding-top: 200px
+  &__wrapper
+    position: relative
+    max-width: $desktop-width
+    margin: 0 auto
+    background: $text-white
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.04)
+    border-radius: 5px
+    &:after
+      position: absolute
+      top: 10px
+      left: 10px
+      display: block
+      width: calc(100% - 20px)
+      height: calc(100% - 20px)
+      content: ''
+      border: 0.5px solid #EBEBEB
+      box-sizing: border-box
+      border-radius: 5px
+  &__title
+    max-width: 565px
+    font-weight: 500
+    padding-top: 65px
+    padding-left: 50px
+  &__text
+    max-width: 500px
+    margin-top: 20px
+    margin-left: 50px
+    font-weight: 400
+    font-size: 24px
+    line-height: 32px
+    & strong
+      font-weight: 500
+  &__button
+    margin-top: 30px
+    margin-left: 50px
+    margin-bottom: 55px

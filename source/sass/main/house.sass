@@ -1,11 +1,12 @@
 .house
   position: relative
-  &__border
+  &:before
     position: absolute
-    width: 95%
-    height: 97%
-    top: 9px
-    left: 9px
+    content: ''
+    width: calc(100% - 20px)
+    height: calc(100% - 20px)
+    top: 10px
+    left: 10px
     border: 0.5px solid #EBEBEB
     border-radius: 4px
     box-sizing: border-box
