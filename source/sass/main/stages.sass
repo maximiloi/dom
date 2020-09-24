@@ -1,8 +1,37 @@
 .stages
   padding-top: 180px
+  & .bg
+    position: relative
+    & img:nth-child(1)
+      position: absolute
+      z-index: -1
+      left: 50%
+      top: -600px
+      transform: translateX(-50%);
+      max-width: 1920px
+      height: 1971px
+      display: block
+    & img:nth-child(2)
+      position: absolute
+      z-index: -1
+      right: calc(50% - 960px)
+      top: 50px
+      max-width: 1350px
+      height: 765px
+      display: block
+    & img:nth-child(3)
+      position: absolute
+      z-index: -1
+      right: calc(50% - 604px)
+      top: 516px
+      max-width: 1533px
+      height: 186px
+      display: block
   &__wrapper
     max-width: $desktop-width
     margin: 0 auto
+    position: relative
+    z-index: 2
   &__title
     text-align: center
   &__list

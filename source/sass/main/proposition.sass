@@ -1,7 +1,36 @@
 .proposition
   padding-top: 200px
+  & .bg
+    position: relative
+    & img:nth-child(1)
+      position: absolute
+      z-index: 1
+      left: 50%
+      top: 94px
+      transform: translateX(-50%);
+      max-width: 1920px
+      height: 573px
+      display: block
+    & img:nth-child(2)
+      position: absolute
+      z-index: 3
+      right: calc(50% - 678px)
+      top: 50px
+      max-width: 798px
+      height: 584px
+      display: block
+    & img:nth-child(3)
+      position: absolute
+      z-index: 3
+      left: 50%
+      transform: translateX(-50%);
+      top: 457px
+      max-width: 1920px
+      height: 406px
+      display: block
   &__wrapper
     position: relative
+    z-index: 2
     max-width: $desktop-width
     margin: 0 auto
     background: $text-white

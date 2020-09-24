@@ -1,11 +1,19 @@
 .offer
   padding-top: 80px
-  //height: 777px
   padding-bottom: 293px
-  background: url($img + '/sec-2/bg.png') 50% calc(50% + 250px) no-repeat
+  //background: url($img + '/sec-2/bg.png') 50% calc(50% + 250px) no-repeat
+  & .bg
+    position: relative
+    & img:nth-child(1)
+      position: absolute
+      z-index: -1
+      left: 50%
+      transform: translateX(-50%)
   &__wrapper
     max-width: $desktop-width
     margin: 0 auto
+    position: relative
+    z-index: 2
   &__title
     max-width: 675px
     font-weight: normal

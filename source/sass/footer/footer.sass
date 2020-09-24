@@ -1,2 +1,27 @@
 .footer
   position: relative
+  background: $text-white
+  // z-index: -2
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    max-width: $desktop-width
+    margin: 0 auto
+    padding: 25px
+    
+  &__logo
+    width: 150px
+    height: 53px
+    margin-left: -7px
+  &__link
+    margin-top: 10px
+    color: $text-black
+    &:hover
+      color: $span-green
+  &-nav
+    max-width: 574px
+    width: 100%
+    justify-content: center
+    font-weight: 500

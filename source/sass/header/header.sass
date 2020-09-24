@@ -1,6 +1,24 @@
 .header
-  background: url($img + '/sec-1/cloud-up.png')
+  & .bg
+    position: relative
+    & img:nth-child(1)
+      position: absolute
+      z-index: -1
+      left: 50%
+      transform: translateX(-50%);
+      max-width: 100%
+      height: 665px
+      display: block
+    & img:nth-child(2)
+      position: absolute
+      z-index: -1
+      right: 0
+      max-width: 100%
+      height: 335px
+      display: block
   &__wrapper
+    position: relative
+    z-index: 2
     max-width: $desktop-width
     margin: 0 auto
     padding-top: 20px
