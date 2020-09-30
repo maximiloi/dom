@@ -2,6 +2,8 @@
   padding-top: 80px
   padding-bottom: 293px
   //background: url($img + '/sec-2/bg.png') 50% calc(50% + 250px) no-repeat
+  @media (max-width: $tablet-width)
+    padding-top: 40px
   & .bg
     position: relative
     & img:nth-child(1)
@@ -14,11 +16,17 @@
     margin: 0 auto
     position: relative
     z-index: 2
+    @media (max-width: $tablet-width)
+      padding: 0 30px
   &__title
     max-width: 675px
     font-weight: normal
     font-size: 42px
     line-height: 48px
+    @media (max-width: $tablet-width)
+      font-size: 38px
+      line-height: 42px
+      max-width: 610px
     & .green
       font-weight: 700
   &__text
@@ -26,13 +34,23 @@
     margin-top: 20px
     font-size: 24px
     line-height: 31px
+    @media (max-width: $tablet-width)
+      font-size: 18px
+    line-height: 24px
   &__flex
     display: flex
+    @media (max-width: $tablet-width)
+      flex-direction: column
   &__button
     margin-top: 67px
+    @media (max-width: $tablet-width)
+      margin-top: 120px
   &__appeal
     max-width: 205px
     margin-top: 155px
     margin-left: 10px
     font-size: 14px
     line-height: 16px
+    @media (max-width: $tablet-width)
+      margin-top: 40px
+      margin-left: 0

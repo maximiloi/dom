@@ -4,15 +4,21 @@
   &__wrapper
     max-width: $desktop-width
     margin: 0 auto
+    @media (max-width: $tablet-width)
+      padding: 0 30px
   &__title
     text-align: center
   &__list
     display: flex
     justify-content: space-around
+    @media (max-width: $tablet-width)
+      flex-wrap: wrap
   &__item
     position: relative
     width: 220px
     margin-top: 210px
+    @media (max-width: $tablet-width)
+      width: 320px
     &:before
       position: absolute
       z-index: -1
@@ -20,18 +26,26 @@
       content: url($img+'/sec-5/building.png')
       bottom: -40px
       left: -85px
+      @media (max-width: $tablet-width)
+        left: -45px
     &:nth-child(2):before
       content: url($img+'/sec-5/sale-house.png')
       bottom: -14px
       left: -55px
+      @media (max-width: $tablet-width)
+        left: 5px
     &:nth-child(3):before
       content: url($img+'/sec-5/repair.png')
-      bottom: -48px;
-      left: -123px;
+      bottom: -48px
+      left: -123px
+      @media (max-width: $tablet-width)
+        left: -55px
     &:nth-child(4):before
       content: url($img+'/sec-5/sites.png')
-      bottom: -32px;
-      left: -112px;
+      bottom: -32px
+      left: -112px
+      @media (max-width: $tablet-width)
+        left: -45px
   &__text
     font-weight: 500
     font-size: 25px

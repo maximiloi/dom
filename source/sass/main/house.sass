@@ -1,5 +1,6 @@
 .house
   position: relative
+  width: 370px
   &:before
     position: absolute
     content: ''
@@ -10,6 +11,13 @@
     border: 0.5px solid #EBEBEB
     border-radius: 4px
     box-sizing: border-box
+  @media (max-width: $tablet-width)
+    width: 320px
+    margin-bottom: 20px
+  &__pic
+    width: 370px
+    @media (max-width: $tablet-width)
+      width: 320px
   &__name
     margin: 20px 20px 10px 20px
     font-weight: 500

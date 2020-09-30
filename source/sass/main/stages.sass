@@ -19,6 +19,8 @@
       max-width: 1350px
       height: 765px
       display: block
+      @media (max-width: $tablet-width)
+        display: none
     & img:nth-child(3)
       position: absolute
       z-index: -1
@@ -32,6 +34,8 @@
     margin: 0 auto
     position: relative
     z-index: 2
+    @media (max-width: $tablet-width)
+      padding: 0 30px
   &__title
     text-align: center
   &__list
@@ -87,6 +91,8 @@
     margin-top: 60px
     display: flex
     align-items: center
+    @media (max-width: $tablet-width)
+      justify-content: center
     &--text
       position: relative
       max-width: 290px

@@ -1,5 +1,8 @@
 .proposition
   padding-top: 200px
+  @media (max-width: $tablet-width)
+    padding: 0 30px
+    padding-top: 100px
   & .bg
     position: relative
     & img:nth-child(1)
@@ -19,6 +22,11 @@
       max-width: 798px
       height: 584px
       display: block
+      @media (max-width: $tablet-width)
+        max-width: 458px
+        height: auto
+        right: calc(50% - 378px)
+        top: 250px
     & img:nth-child(3)
       position: absolute
       z-index: 3

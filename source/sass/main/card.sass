@@ -4,33 +4,57 @@
     flex-direction: column
     flex-wrap: wrap
     height: 495px
+    @media (max-width: $tablet-width)
+      height: auto
+      flex-direction: row
   &__item
     height: 232px
     background: $text-white
+    @media (max-width: $tablet-width)
+      margin: 0
+      margin-bottom: 30px
     &--big
       height: 495px
+      @media (max-width: $tablet-width)
+        height: 232px
     &:nth-child(1)
       margin-right: 20px
-      width: 355px
-      background: no-repeat 50% 50% url($img + '/sec-3/card1.jpg')
+      max-width: 355px
+      background: no-repeat 50% 50% url($img + '/sec-3/card1.jpg'), $text-white
+      @media (max-width: $tablet-width)
+        max-width: 100%
+        width: 100%
     &:nth-child(2)
       margin-right: 20px
       margin-bottom: 30px
-      width: 370px
-      background: no-repeat 50% 50% url($img + '/sec-3/card2.png')
+      max-width: 370px
+      background: no-repeat 50% 50% url($img + '/sec-3/card2.png'), $span-green
       color: $text-white
+      @media (max-width: $tablet-width)
+        max-width: 100%
+        width: 100%
     &:nth-child(3)
       margin-right: 20px
-      width: 470px
-      background: no-repeat 50% 50% url($img + '/sec-3/card4.png')
+      max-width: 470px
+      background: no-repeat 50% 50% url($img + '/sec-3/card4.png'), $text-white
+      @media (max-width: $tablet-width)
+        max-width: 100%
+        width: 100%
     &:nth-child(4)
       margin-left: -90px
       margin-bottom: 30px
-      width: 387px
-      background: no-repeat 50% 50% url($img + '/sec-3/card3.png')
+      max-width: 387px
+      background: no-repeat 50% 50% url($img + '/sec-3/card3.png'), $text-white
+      @media (max-width: $tablet-width)
+        max-width: 100%
+        width: 100%
+        margin-left: 0
     &:nth-child(5)
-      width: 300px
-      background: no-repeat 50% 50% url($img + '/sec-3/card5.png')
+      max-width: 300px
+      background: no-repeat 50% 50% url($img + '/sec-3/card5.png'), $text-white
+      @media (max-width: $tablet-width)
+        max-width: 100%
+        width: 100%
   &__title
     padding-top: 27px
     padding-bottom: 15px
@@ -38,5 +62,9 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+    @media (max-width: $tablet-width)
+      padding-right: 27px
   &__text
     padding-left: 27px
+    @media (max-width: $tablet-width)
+      padding-right: 27px

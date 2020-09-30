@@ -3,6 +3,8 @@
   &__wrapper
     max-width: $desktop-width
     margin: 0 auto
+    @media (max-width: $tablet-width)
+      padding: 0 30px
   &__title
     text-align: center
     font-weight: 700
@@ -12,3 +14,6 @@
     font-size: 30px
     line-height: 34px
     text-align: center
+  & img
+    @media (max-width: $tablet-width)
+      width: 100%

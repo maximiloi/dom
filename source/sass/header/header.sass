@@ -6,7 +6,8 @@
       z-index: -1
       left: 50%
       transform: translateX(-50%);
-      max-width: 100%
+      max-width: 1920px
+      width: 100%
       height: 665px
       display: block
     & img:nth-child(2)
@@ -25,9 +26,17 @@
     display: flex
     justify-content: space-between
     align-items: center
+    @media (max-width: $tablet-width)
+      flex-wrap: wrap
+      padding: 30px
   &__contact
     display: flex
     flex-direction: column
+  &__nav
+    @media (max-width: $tablet-width)
+      width: 100%
+      order: 3
+      margin-top: 30px
   &__phone
     font-weight: bold;
     font-size: 20px;
