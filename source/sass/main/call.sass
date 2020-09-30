@@ -1,5 +1,7 @@
 .call
   padding: 0 30px
+  @media (max-width: $mobile-width)
+    padding: 0 10px
   & .bg
     position: relative
     & img:nth-child(1)
@@ -40,6 +42,8 @@
       bottom: -5px
       right: 0
       z-index: -1
+      @media (max-width: $mobile-width)
+        display: none
   &__border
     position: absolute
     width: calc(100% - 20px)
@@ -51,11 +55,13 @@
   &__title
     padding-top: 35px
   &__text
-    width: 660px
+    max-width: 660px
     margin: 0 auto
     margin-top: 20px
     margin-bottom: 30px
     font-size: 28px
     line-height: 32px
+    @media (max-width: $mobile-width)
+      margin: 20px 10px 30px
   &__button
     margin-bottom: 60px

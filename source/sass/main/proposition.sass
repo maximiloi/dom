@@ -27,6 +27,8 @@
         height: auto
         right: calc(50% - 378px)
         top: 250px
+      @media (max-width: $mobile-width)
+        display: none
     & img:nth-child(3)
       position: absolute
       z-index: 3
@@ -55,11 +57,15 @@
       border: 0.5px solid #EBEBEB
       box-sizing: border-box
       border-radius: 5px
+    @media (max-width: $mobile-width)
+      text-align: center
   &__title
     max-width: 565px
     font-weight: 500
     padding-top: 65px
     padding-left: 50px
+    @media (max-width: $mobile-width)
+      padding: 20px
   &__text
     max-width: 500px
     margin-top: 20px
@@ -67,9 +73,13 @@
     font-weight: 400
     font-size: 24px
     line-height: 32px
+    @media (max-width: $mobile-width)
+      margin: 20px
     & strong
       font-weight: 500
   &__button
     margin-top: 30px
     margin-left: 50px
     margin-bottom: 55px
+    @media (max-width: $mobile-width)
+      margin-left: 0

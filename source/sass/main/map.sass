@@ -1,10 +1,14 @@
 .map
   padding-top: 180px
+  @media (max-width: $mobile-width)
+    padding-top: 50px
   &__wrapper
     max-width: $desktop-width
     margin: 0 auto
     @media (max-width: $tablet-width)
       padding: 0 30px
+    @media (max-width: $mobile-width)
+      padding: 0 10px
   &__title
     text-align: center
     font-weight: 700

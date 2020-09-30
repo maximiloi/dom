@@ -1,5 +1,7 @@
 .stages
   padding-top: 180px
+  @media (max-width: $mobile-width)
+    padding-top: 50px
   & .bg
     position: relative
     & img:nth-child(1)
@@ -36,6 +38,8 @@
     z-index: 2
     @media (max-width: $tablet-width)
       padding: 0 30px
+    @media (max-width: $mobile-width)
+      padding: 0 10px
   &__title
     text-align: center
   &__list
@@ -43,6 +47,8 @@
     margin-top: 80px
     display: flex
     flex-wrap: wrap
+    @media (max-width: $mobile-width)
+      margin-top: 50px
   &__item
     position: relative
     max-width: 280px
@@ -55,6 +61,9 @@
     border-radius: 5px
     &:nth-child(2n)
       margin-right: 0
+    @media (max-width: $mobile-width)
+      margin-right: 0
+      max-width: 100%
     &:before
       position: absolute
       top: 30px
@@ -63,6 +72,11 @@
       font-size: 46px
       line-height: 44px
       color: $span-green
+      @media (max-width: $mobile-width)
+        top: 20px
+        right: 20px
+        font-size: 36px
+        line-height: 36px
     &:nth-child(1):before
       content: '01'
     &:nth-child(2):before
@@ -93,14 +107,24 @@
     align-items: center
     @media (max-width: $tablet-width)
       justify-content: center
+    @media (max-width: $mobile-width)
+      flex-direction: column
     &--text
       position: relative
       max-width: 290px
+      @media (max-width: $mobile-width)
+        margin-top: 30px
       &:before
         position: absolute
         top: -8px
         left: -57px
         content: url($img + '/sec-8/arrow.png')
+        @media (max-width: $mobile-width)
+          top: -48px
+          left: -26px
+          transform: rotate(84deg) scale(1, -1)
   &__button
     margin-right: 60px
+    @media (max-width: $mobile-width)
+      margin-right: 0
   

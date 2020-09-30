@@ -10,13 +10,19 @@
   &__item
     height: 232px
     background: $text-white
+    border-radius: 4px
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1)
     @media (max-width: $tablet-width)
       margin: 0
       margin-bottom: 30px
+    @media (max-width: $mobile-width)
+      height: 154px
     &--big
       height: 495px
       @media (max-width: $tablet-width)
         height: 232px
+      @media (max-width: $mobile-width)
+        height: 154px
     &:nth-child(1)
       margin-right: 20px
       max-width: 355px
@@ -24,6 +30,12 @@
       @media (max-width: $tablet-width)
         max-width: 100%
         width: 100%
+        margin-right: 0
+        background: no-repeat 0 50% url($img + '/sec-3/card1-tablet.jpg'), $text-white
+        background-size: cover
+      @media (max-width: $mobile-width)
+        background: no-repeat 0 50% url($img + '/sec-3/card1-mobile.jpg'), $text-white
+        background-size: cover
     &:nth-child(2)
       margin-right: 20px
       margin-bottom: 30px
@@ -33,6 +45,9 @@
       @media (max-width: $tablet-width)
         max-width: 100%
         width: 100%
+        margin-right: 0
+        background: no-repeat 0 50% url($img + '/sec-3/card2-tablet.jpg'), $span-green
+        background-size: cover
     &:nth-child(3)
       margin-right: 20px
       max-width: 470px
@@ -40,6 +55,12 @@
       @media (max-width: $tablet-width)
         max-width: 100%
         width: 100%
+        margin-right: 0
+        background: no-repeat 0 50% url($img + '/sec-3/card4-tablet.jpg'), $text-white
+        background-size: cover
+      @media (max-width: $mobile-width)
+        background: no-repeat 0 50% url($img + '/sec-3/card4-mobile.jpg'), $text-white
+        background-size: cover
     &:nth-child(4)
       margin-left: -90px
       margin-bottom: 30px
@@ -49,12 +70,22 @@
         max-width: 100%
         width: 100%
         margin-left: 0
+        background: no-repeat 0 50% url($img + '/sec-3/card3-tablet.jpg'), $text-white
+        background-size: cover
+      @media (max-width: $mobile-width)
+        background: no-repeat 0 0 url($img + '/sec-3/card3-mobile.jpg'), $text-white
+        background-size: cover
     &:nth-child(5)
       max-width: 300px
       background: no-repeat 50% 50% url($img + '/sec-3/card5.png'), $text-white
       @media (max-width: $tablet-width)
         max-width: 100%
         width: 100%
+        background: no-repeat 0 50% url($img + '/sec-3/card5-tablet.jpg'), $text-white
+        background-size: cover
+      @media (max-width: $mobile-width)
+        background: no-repeat 0 50% url($img + '/sec-3/card5-mobile.jpg'), $text-white
+        background-size: cover
   &__title
     padding-top: 27px
     padding-bottom: 15px
@@ -64,7 +95,11 @@
     line-height: 21px;
     @media (max-width: $tablet-width)
       padding-right: 27px
+    @media (max-width: $mobile-width)
+      padding: 30px 15px 20px 15px
   &__text
     padding-left: 27px
     @media (max-width: $tablet-width)
       padding-right: 27px
+    @media (max-width: $mobile-width)
+      padding: 0 15px
