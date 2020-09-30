@@ -21,7 +21,9 @@
     @media (max-width: $tablet-width)
       left: calc(50% - 235px)
     @media (max-width: $mobile-width)
+      top: 320px
       left: 50%
+      width: 300px
       transform: translateX(-50%)
     &:before
       position: absolute
@@ -40,11 +42,16 @@
     font-weight: 500
     font-size: 32px
     line-height: 38px
+    @media (max-width: $mobile-width)
+      margin-left: 0
+      text-align: center
   &__list
     margin-top: 60px
     margin-left: 70px
     z-index: 2
     position: relative
+    @media (max-width: $mobile-width)
+      margin-left: 52px
   &__item
     margin-bottom: 30px
     &--phone a
