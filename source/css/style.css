@@ -641,7 +641,7 @@ button, .button {
         margin-left: 0; } }
     .offer__appeal:before {
       position: absolute;
-      content: url("/img/sec-2/arrow.svg");
+      content: url("/img/sec-2/arrow.png");
       width: 48px;
       height: 36px;
       left: -60px;
@@ -966,6 +966,9 @@ button, .button {
     .services__item:before {
       position: absolute;
       z-index: -1; }
+    .services__item:nth-child(1):hover .services__subtext {
+      visibility: visible;
+      left: 0; }
     .services__item:nth-child(1):before {
       content: url("../img/sec-5/building.png");
       bottom: -40px;
@@ -973,6 +976,9 @@ button, .button {
       @media (max-width: 768px) {
         .services__item:nth-child(1):before {
           left: -45px; } }
+    .services__item:nth-child(2):hover .services__subtext {
+      visibility: visible;
+      right: 0; }
     .services__item:nth-child(2):before {
       content: url("../img/sec-5/sale-house.png");
       bottom: -14px;
@@ -980,6 +986,9 @@ button, .button {
       @media (max-width: 768px) {
         .services__item:nth-child(2):before {
           left: 5px; } }
+    .services__item:nth-child(3):hover .services__subtext {
+      visibility: visible;
+      left: 0; }
     .services__item:nth-child(3):before {
       content: url("../img/sec-5/repair.png");
       bottom: -48px;
@@ -987,6 +996,9 @@ button, .button {
       @media (max-width: 768px) {
         .services__item:nth-child(3):before {
           left: -55px; } }
+    .services__item:nth-child(4):hover .services__subtext {
+      visibility: visible;
+      right: 0; }
     .services__item:nth-child(4):before {
       content: url("../img/sec-5/sites.png");
       bottom: -32px;
@@ -999,6 +1011,15 @@ button, .button {
     font-size: 25px;
     line-height: 27px;
     text-align: center; }
+  .services__subtext {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    width: 520px;
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 6px; }
 
 .call {
   padding: 0 30px; }

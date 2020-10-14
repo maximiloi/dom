@@ -43,24 +43,36 @@
     &:before
       position: absolute
       z-index: -1
+    &:nth-child(1):hover .services__subtext
+      visibility: visible
+      left: 0
     &:nth-child(1):before
       content: url($img+'/sec-5/building.png')
       bottom: -40px
       left: -85px
       @media (max-width: $tablet-width)
         left: -45px
+    &:nth-child(2):hover .services__subtext
+      visibility: visible
+      right: 0
     &:nth-child(2):before
       content: url($img+'/sec-5/sale-house.png')
       bottom: -14px
       left: -55px
       @media (max-width: $tablet-width)
         left: 5px
+    &:nth-child(3):hover .services__subtext
+      visibility: visible
+      left: 0
     &:nth-child(3):before
       content: url($img+'/sec-5/repair.png')
       bottom: -48px
       left: -123px
       @media (max-width: $tablet-width)
         left: -55px
+    &:nth-child(4):hover .services__subtext
+      visibility: visible
+      right: 0
     &:nth-child(4):before
       content: url($img+'/sec-5/sites.png')
       bottom: -32px
@@ -72,3 +84,12 @@
     font-size: 25px
     line-height: 27px
     text-align: center
+  &__subtext
+    position: absolute;
+    z-index: 1;
+    visibility: hidden
+    width: 520px
+    background-color: #fff
+    color: #000
+    padding: 5px
+    border-radius: 6px
