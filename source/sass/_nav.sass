@@ -1,12 +1,14 @@
 .nav
+  display: flex
+  align-items: center
   &__list
     display: flex
     @media (max-width: $tablet-width)
       justify-content: center
   &__item
     margin-right: 40px
-    &:last-child
-      margin-right: 0
+    // &:last-child
+    //   margin-right: 0
     @media (max-width: $mobile-width)
       margin-right: 10px
   &__link

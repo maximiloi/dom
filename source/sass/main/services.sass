@@ -1,8 +1,10 @@
 .services
   padding-top: 150px
   padding-bottom: 110px
-  @media (max-width: $tablet-width)
-    & .bg
+  & .bg
+    display: none
+    @media (max-width: $tablet-width)
+      display: block
       position: relative
       & img:nth-child(1)
         position: absolute

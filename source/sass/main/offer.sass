@@ -11,7 +11,7 @@
     & img:nth-child(1)
       position: absolute
       z-index: -1
-      top: -154px
+      top: -167px
       left: 50%
       transform: translateX(-50%)
       @media (max-width: $tablet-width)
@@ -72,7 +72,8 @@
       margin: 0 auto
       margin-top: 40px
   &__appeal
-    max-width: 205px
+    position: relative
+    max-width: 230px
     margin-top: 155px
     margin-left: 10px
     font-size: 14px
@@ -80,3 +81,10 @@
     @media (max-width: $tablet-width)
       margin-top: 40px
       margin-left: 0
+    &:before
+      position: absolute
+      content: url("/img/sec-2/arrow.svg")
+      width: 48px
+      height: 36px
+      left: -60px
+      top: -14px
