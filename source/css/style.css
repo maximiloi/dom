@@ -459,7 +459,8 @@ button, .button {
   text-align: center;
   border-bottom: 2px solid #00BE5F;
   box-shadow: 0px 10px 35px rgba(15, 219, 60, 0.61);
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .page__wrapper {
   overflow-x: hidden; }
