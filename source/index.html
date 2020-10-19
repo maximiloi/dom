@@ -25,6 +25,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/modal.css">
 
   <!-- owl carousel -->
   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
@@ -46,11 +47,11 @@
             <li class="nav__item"><a href="#houses-for-sale" class="nav__link">Наши проекты</a></li>
             <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
           </ul>
-          <a class="nav__button  button">Презентация</a>
+          <!-- <a class="nav__button  button">Презентация</a> -->
         </div>
         <div class="header__contact">
           <a href="tel:+79189862644" class="header__phone">+7 918 986 26 44</a>
-          <a class="header__callback callback">Заказать звонок</a>
+          <a class="header__callback callback" data-modal-id="modal" data-modal-title="Обратный звонок" data-modal-subject="Обратный звонок">Заказать звонок</a>
         </div>
       </div>
     </header>
@@ -68,7 +69,7 @@
               class="green">от 2,5 млн</span> рублей</h1>
           <p class="offer__text">Строительство и продажа домов в Анапе и Анапском районе</p>
           <div class="offer__flex">
-            <button class="offer__button  button">Оставить заявку</button>
+            <button class="offer__button  button" data-modal-id="modal" data-modal-title="Обратный звонок" data-modal-subject="Обратный звонок">Оставить заявку</button>
             <p class="offer__appeal">Оставьте заявку и мы бесплатно проконсультируем Вас по вопросам недвижимости!</p>
           </div>
         </div>
@@ -302,7 +303,7 @@
           <div class="call__border"></div>
           <h2 class="call__title"><strong>Покупайте</strong> дом <strong>с выгодой</strong></h2>
           <p class="call__text">Оставьте свои контакты в течение <strong><span class="green">30 минут</span> и получите <span class="green">котельное оборудование в подарок</span></strong> под ключ</p>
-          <button class="call__button  button">Оставить заявку</button>
+          <button class="call__button  button" data-modal-id="modal" data-modal-title="Обратный звонок" data-modal-subject="Обратный звонок">Оставить заявку</button>
         </div>
       </section>
 
@@ -371,7 +372,7 @@
       <!-- sec-10 -->
       <section class="contact">
         <div class="contact__map">
-          <img src="http://place-puppy.com/1920x670" alt="Placeholder Puppy">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a1970e78e0f60b91894b431bbfd68520c9be541dfc60a9625c8507e54f14e9e&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
         <div class="contact__wrapper" id="contacts">
           <!-- <a name=></a> -->
@@ -379,10 +380,9 @@
           <ul class="contact__list">
             <li class="contact__item  contact__item--phone"><a href="tel:+79189862644">+7 918 986 26 44</a></li>
             <li class="contact__item  contact__item--map">г. Анапа, ул.Крымская, 177</li>
-            <li class="contact__item  contact__item--instagram"><a href="#" target="_blank" class="instagram"></a>
-              @topdom_anapa</li>
+            <li class="contact__item  contact__item--instagram"><a href="https://www.instagram.com/topdom_anapa/" target="_blank" class="instagram">@topdom_anapa</a></li>
           </ul>
-          <button class="contact__button  button">Связаться с нами</button>
+          <button class="contact__button  button" data-modal-id="modal" data-modal-title="Обратный звонок" data-modal-subject="Обратный звонок">Связаться с нами</button>
         </div>
       </section>
 
@@ -402,11 +402,40 @@
     </footer>
 
   </div>
+
+  <!-- modal -->
+  <div id="modal" class="modal _hidden">
+    <div data-modal-exit class="modal__bg"></div>
+    <div class="modal__window">
+        <span data-modal-exit class="modal__exit"></span>
+        <div class="modal__title">
+            Новый Тайтл
+        </div>
+        <form data-form="call" data-modal-metrica=" " action="#" class="modal__form ">
+            <input type="hidden" name="msg_subject" value="">
+            <p>
+                <input type="text" name="user_name" placeholder="Ваше имя">
+            </p>
+            <p>
+                <input type="text" name="user_phone" placeholder="Ваш номер телефона" required>
+            </p>
+            <p>
+                <button type="submit" class="btn _green-gradient _small">Отправить</button>
+            </p>
+        </form>
+        <p class="_fz12 policy-text">
+            Отправляя форму, вы соглашаетесь с <a class="_green-light" href="/policy">политикой в отношении
+                обработки персональных данных</a>
+        </p>
+    </div>
+</div>
+
   <!-- jquery -->
   <script src="script/jquery.min.js"></script>
   <!-- owl carousel -->
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <script src="script/main.js"></script>
+  <script src="script/modal.js"></script>
 </body>
 
 </html>

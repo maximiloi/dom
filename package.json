@@ -42,5 +42,8 @@
     "posthtml-include": "^1.4.3",
     "sassy-normalize": "^8.0.5",
     "stylelint": "^13.6.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^7.0.1"
   }
 }

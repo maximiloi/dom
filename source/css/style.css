@@ -855,7 +855,10 @@ button, .button {
 .sale__item {
   background: #FFFFFF;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.11);
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .sale__button {
   display: block;
@@ -865,7 +868,7 @@ button, .button {
 .house {
   position: relative;
   max-width: 370px;
-  height: 720px; }
+  height: 700px; }
   .house:before {
     position: absolute;
     content: '';
@@ -900,7 +903,8 @@ button, .button {
     margin: 0 20px;
     font-weight: normal;
     font-size: 18px;
-    line-height: 24px; }
+    line-height: 24px;
+    flex-grow: 2; }
   .house__specification {
     display: flex; }
   .house__title, .house__adress {
@@ -1475,10 +1479,11 @@ button, .button {
       width: 24px;
       height: 24px;
       left: -30px; }
-  .contact__item--instagram {
+  .contact__item--instagram a {
     font-size: 25px;
-    line-height: 24px; }
-    .contact__item--instagram:before {
+    line-height: 24px;
+    color: #000000; }
+    .contact__item--instagram a:before {
       position: absolute;
       display: block;
       content: '';

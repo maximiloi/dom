@@ -1,0 +1,233 @@
+.policy-text {
+  text-align: center;
+  padding-top: 15px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.policy-text._ta-l {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 0;
+}
+.modal {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  transition: 0s 0s;
+}
+.modal._hidden {
+  top: -500vh;
+  transition: 0s 0.4s;
+}
+.modal._hidden .modal__bg {
+  opacity: 0;
+}
+.modal._hidden .modal__window {
+  opacity: 0;
+}
+.modal__bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+.modal__window {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 98%;
+  max-width: 400px;
+  padding: 35px 25px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 1;
+  transition: 0.4s;
+}
+.modal__window--big {
+  max-width: 1170px;
+}
+.modal__wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+@media screen and (max-width: 769px) {
+  .modal__wrapper img {
+    display: none;
+  }
+}
+.modal__wrapper--info .modal__title {
+  font-size: 36px;
+  text-align: left;
+}
+@media screen and (max-width: 451px) {
+  .modal__wrapper--info .modal__title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+.modal__wrapper--info .modal__list {
+  max-width: 450px;
+  margin-top: 45px;
+  padding-left: 16px;
+}
+@media screen and (max-width: 451px) {
+  .modal__wrapper--info .modal__list {
+    margin-top: 20px;
+  }
+}
+.modal__wrapper--info .modal__item {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.modal__wrapper--info .modal__item:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 11px;
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #23bc4f;
+}
+@media screen and (max-width: 451px) {
+  .modal__wrapper--info .modal__item:before {
+    top: 5px;
+  }
+}
+@media screen and (max-width: 451px) {
+  .modal__wrapper--info .modal__item {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+}
+.modal__wrapper .cost {
+  margin-top: 50px;
+  max-width: 390px;
+  height: 80px;
+  background: linear-gradient(90deg, #1fbb52 0%, #76c525 100%);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.modal__wrapper .cost__name {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.modal__wrapper .cost__description {
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+.modal__wrapper .cost__price {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 451px) {
+  .modal__wrapper .cost {
+    margin-top: 20px;
+  }
+}
+.modal__img {
+  margin-top: 50px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0.174px 4.997px 32px rgba(47, 189, 71, 0.49));
+  margin-bottom: 20px;
+}
+.modal__exit {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+.modal__exit::after,
+.modal__exit::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #cdcccc;
+  position: absolute;
+  cursor: pointer;
+}
+.modal__exit::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal__exit::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal__title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  margin-top: 10px;
+}
+.modal__title > span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.7em;
+  font-weight: 400;
+}
+.modal__form {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.modal__form > p {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  text-align: center;
+}
+.modal__form > p:not(:first-child) > input {
+  margin-top: 15px;
+}
+.modal__form > p:not(:first-child) > button {
+  margin: 25px auto 0;
+  width: 100%;
+}
+.modal__form > p > input {
+  width: 278px;
+  padding: 12px 15px;
+  background-color: #efefef;
+  border: 1px solid #e9e8e8;
+  border-radius: 3px;
+}
