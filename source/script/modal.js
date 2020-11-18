@@ -17,8 +17,6 @@ function openModal() {
   // Считываем заголовок, хранящийся в data атрибуте кнопки
   let modalSubject = this.getAttribute("data-modal-subject");
   // Считываем тему письма, хранящуюся в data атрибуте кнопки
-  let modalMetrica = this.getAttribute("data-modal-metrica");
-  // Считываем тему письма, хранящуюся в data атрибуте кнопки
 
   modalElems.forEach((item) => {
     // перебираем все модальные окна
@@ -29,7 +27,7 @@ function openModal() {
       if (modalId !== "modal-thx") {
         // Если id модального окна НЕ modal-thx, тогда
         // вызываем функцию замены заголовка и темы письма
-        chageModalParams(modalId, modalTitle, modalSubject, modalMetrica);
+        chageModalParams(modalId, modalTitle, modalSubject);
       }
 
       item.classList.remove("_hidden");
@@ -38,7 +36,7 @@ function openModal() {
   });
 }
 
-function chageModalParams(modalId, modalTitle, modalSubject, modalMetrica) {
+function chageModalParams(modalId, modalTitle, modalSubject) {
   // функция заметы заголовка и темы модального окна
 
   // Замена тайтла
@@ -65,20 +63,6 @@ function chageModalParams(modalId, modalTitle, modalSubject, modalMetrica) {
     default:
     // иначе, присваиваем стандартную тему письма
     // document.querySelector(`#${modalId} [name="msg_subject"]`).value = 'Клиент ждет обратного звонка';
-  }
-
-  // Замена metrica-id
-  switch (modalMetrica && modalMetrica !== "") {
-    case true:
-      // Если переменная modalMetrica НЕ пуста, то присваиваем модальному окну ее содержимое
-      document
-        .querySelector(`#${modalId} [data-modal-metrica]`)
-        .setAttribute("data-modal-metrica", modalMetrica);
-
-      break;
-    default:
-    // иначе, присваиваем стандартный id
-    // document.querySelector(`#${modalId} [data-modal-metrica]`).setAttribute('data-modal-metrica', 'form');
   }
 }
 

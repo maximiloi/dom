@@ -24,21 +24,25 @@
   <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  ym(68626333, "init", {
-    clickmap:true,
-    trackLinks:true,
-    accurateTrackBounce:true,
-    webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/68626333" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    ym(68626333, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/68626333" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNKC78LFHV"></script>
@@ -52,11 +56,14 @@
 
   <!-- style -->
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/modal.css">
+  <!-- <link rel="stylesheet" href="css/modal.css"> -->
+
+  <!-- lightbox -->
+  <link rel="stylesheet" href="assets/lightbox/css/lightbox.css">
 
   <!-- owl carousel -->
-  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.css">
 
 </head>
 
@@ -162,6 +169,7 @@
         <div class="sale__wrapper" id="houses-for-sale">
           <h2 class="sale__title">Дома <strong>в продаже</strong></h2>
           <ul class="sale__list  owl-carousel  owl-theme">
+
             <li class="sale__item  house">
               <img src="img/sec-4/img-1.jpg" alt="" class="house__pic">
               <h3 class="house__name">Дом 2 этажа в стиле Хайтек</h3>
@@ -182,8 +190,13 @@
                   <p class="house__adress">с.Супсех, Космонавтов 52</p>
                 </li>
               </ul>
-              <button class="sale__button  button  b24-web-form-popup-btn-3" onclick="ym(68626333,'reachGoal','nomer telefona'); return true;">Подробнее</button>
+              <a href="img/sec-4/type1/type1_1.jpg" data-lightbox="type-1" data-title="Дом 2 этажа в стиле Хайтек, с.Супсех, Космонавтов 52">
+                <button class="sale__button  button">Подробнее</button>
+              </a>
+              <a href="img/sec-4/type1/type1_2.jpg" data-lightbox="type-1" data-title="Дом 2 этажа в стиле Хайтек, с.Супсех, Космонавтов 52"></a>
+              <a href="img/sec-4/type1/type1_3.jpg" data-lightbox="type-1" data-title="Дом 2 этажа в стиле Хайтек, с.Супсех, Космонавтов 52"></a>
             </li>
+
             <li class="sale__item  house">
               <img src="img/sec-4/img-2.jpg" alt="" class="house__pic">
               <h3 class="house__name">Дом 2 этажа с террасой</h3>
@@ -205,7 +218,12 @@
                   <p class="house__adress">с.Супсех, Космонавтов 21</p>
                 </li>
               </ul>
-              <button class="sale__button  button  b24-web-form-popup-btn-3" onclick="ym(68626333,'reachGoal','nomer telefona'); return true;">Подробнее</button>
+              <a href="img/sec-4/type2/type2_1.jpg" data-lightbox="type-2" data-title="Дом 2 этажа с террасой, с.Супсех, ул.Космонавтов 21">
+                <button class="sale__button  button">Подробнее</button>
+              </a>
+              <a href="img/sec-4/type2/type2_2.jpg" data-lightbox="type-2" data-title="Дом 2 этажа с террасой, с.Супсех, ул.Космонавтов 21"></a>
+              <a href="img/sec-4/type2/type2_3.jpg" data-lightbox="type-2" data-title="Дом 2 этажа с террасой, с.Супсех, ул.Космонавтов 21"></a>
+              <a href="img/sec-4/type2/type2_4.jpg" data-lightbox="type-2" data-title="Дом 2 этажа с террасой, с.Супсех, ул.Космонавтов 21"></a>
             </li>
             <li class="sale__item  house">
               <img src="img/sec-4/img-3.jpg" alt="" class="house__pic">
@@ -228,8 +246,14 @@
                   <p class="house__adress">с.Супсех, Прибрежная 61</p>
                 </li>
               </ul>
-              <button class="sale__button  button  b24-web-form-popup-btn-3" onclick="ym(68626333,'reachGoal','nomer telefona'); return true;">Подробнее</button>
+              <a href="img/sec-4/type3/type3_1.jpg" data-lightbox="type-3" data-title="Дом 2 этажа, с.Супсех, ул.Прибрежная 61">
+                <button class="sale__button  button">Подробнее</button>
+              </a>
+              <a href="img/sec-4/type3/type3_2.jpg" data-lightbox="type-3" data-title="Дом 2 этажа, с.Супсех, ул.Прибрежная 61"></a>
+              <a href="img/sec-4/type3/type3_3.jpg" data-lightbox="type-3" data-title="Дом 2 этажа, с.Супсех, ул.Прибрежная 61"></a>
+              <a href="img/sec-4/type3/type3_4.jpg" data-lightbox="type-3" data-title="Дом 2 этажа, с.Супсех, ул.Прибрежная 61"></a>
             </li>
+
             <li class="sale__item  house">
               <img src="img/sec-4/img-5.jpg" alt="" class="house__pic">
               <h3 class="house__name">Дом 2 этажа</h3>
@@ -252,6 +276,7 @@
               </ul>
               <button class="sale__button  button  b24-web-form-popup-btn-3" onclick="ym(68626333,'reachGoal','nomer telefona'); return true;">Подробнее</button>
             </li>
+
             <li class="sale__item  house">
               <img src="img/sec-4/img-6.jpg" alt="" class="house__pic">
               <h3 class="house__name">Дом 1 этаж</h3>
@@ -269,7 +294,11 @@
                   <p class="house__adress">с.Супсех, Волжский переулок 3</p>
                 </li>
               </ul>
-              <button class="sale__button  button  b24-web-form-popup-btn-3" onclick="ym(68626333,'reachGoal','nomer telefona'); return true;">Подробнее</button>
+              <a href="img/sec-4/type5/type5_1.jpg" data-lightbox="type-5" data-title="Дом 1 этаж, с.Супсех, Волжский переулок 3">
+                <button class="sale__button  button">Подробнее</button>
+              </a>
+              <a href="img/sec-4/type5/type5_2.jpg" data-lightbox="type-5" data-title="Дом 1 этаж, с.Супсех, Волжский переулок 3"></a>
+              <a href="img/sec-4/type5/type5_3.jpg" data-lightbox="type-5" data-title="Дом 1 этаж, с.Супсех, Волжский переулок 3"></a>
             </li>
             <!-- <li class="sale__item  house">
               <img src="img/sec-4/house-1.jpg" alt="" class="house__pic">
@@ -443,43 +472,51 @@
   </div>
 
   <!--START modal -->
-  <div id="modal" class="modal _hidden">
+
+  <div id="type2" class="modal _hidden">
     <div data-modal-exit class="modal__bg"></div>
     <div class="modal__window">
         <span data-modal-exit class="modal__exit"></span>
         <div class="modal__title">
             Новый Тайтл
         </div>
-        <form data-form="call" data-modal-metrica=" " action="#" class="modal__form " id="javascript_form">
-            <input type="hidden" name="msg_subject" value="">
-            <p>
-                <input type="text" name="user_name" placeholder="Ваше имя">
-            </p>
-            <p>
-                <input type="text" name="user_phone" placeholder="Ваш телефон" required class="phone_mask">
-            </p>
-            <p>
-                <button type="submit" class="btn _green-gradient _small" id="js_send" onclick="ym(68626333,'reachGoal','zayavka'); return true;">Отправить</button>
-            </p>
-        </form>
-        <p class="_fz12 policy-text">
-          Отправляя форму, вы соглашаетесь с политикой в отношении обработки персональных данных
-        </p>
+
     </div>
   </div>
 
-  <div id="modal-thx" class="modal _hidden">
+  <div id="type3" class="modal _hidden">
     <div data-modal-exit class="modal__bg"></div>
     <div class="modal__window">
         <span data-modal-exit class="modal__exit"></span>
         <div class="modal__title">
-            Заявка отправлена!
+            Новый Тайтл
         </div>
-        <div class="modal__img">
-            <img src="img/icons/ok.png" alt="">
-        </div>
+
     </div>
   </div>
+
+  <div id="type4" class="modal _hidden"> // пока пустой
+    <div data-modal-exit class="modal__bg"></div>
+    <div class="modal__window">
+        <span data-modal-exit class="modal__exit"></span>
+        <div class="modal__title">
+            Новый Тайтл
+        </div>
+
+    </div>
+  </div>
+
+  <div id="type5" class="modal _hidden">
+    <div data-modal-exit class="modal__bg"></div>
+    <div class="modal__window">
+        <span data-modal-exit class="modal__exit"></span>
+        <div class="modal__title">
+            Новый Тайтл
+        </div>
+
+    </div>
+  </div>
+
   <!--END modal -->
 
   <!-- jquery -->
@@ -487,9 +524,13 @@
   <script src="script/jquery.maskedinput.js"></script>
 
   <!-- owl carousel -->
-  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- lightbox -->
+  <script src="assets/lightbox/js/lightbox.js"></script>
+
   <script src="script/main.js"></script>
-  <script src="script/modal.js"></script>
+  <!-- <script src="script/modal.js" defer></script> -->
   <script id="bx24_form_button" data-skip-moving="true">
     (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
             (w[b].forms=w[b].forms||[]).push(arguments[0])};

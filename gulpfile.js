@@ -91,7 +91,7 @@ gulp.task("copy", function () {
     "source/video/**",
     "source/css/**",
     "source/lib/**",
-    "source/owlcarousel/**"
+    "source/assets/**"
   ], {
     base: "source"
   })
