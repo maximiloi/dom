@@ -1,15 +1,20 @@
 .nav
   display: flex
   align-items: center
+  @media (max-width: $mobile-width)
+    flex-direction: column-reverse
   &__list
     display: flex
     @media (max-width: $tablet-width)
       justify-content: center
+      align-items: center
+      // text-align: center
   &__item
     margin-right: 40px
     // &:last-child
     //   margin-right: 0
     @media (max-width: $mobile-width)
+      margin-top: 20px
       margin-right: 10px
   &__link
     color: $text-black

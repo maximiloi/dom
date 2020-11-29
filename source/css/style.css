@@ -534,15 +534,20 @@ button, .button {
 .nav {
   display: flex;
   align-items: center; }
+  @media (max-width: 450px) {
+    .nav {
+      flex-direction: column-reverse; } }
   .nav__list {
     display: flex; }
     @media (max-width: 768px) {
       .nav__list {
-        justify-content: center; } }
+        justify-content: center;
+        align-items: center; } }
   .nav__item {
     margin-right: 40px; }
     @media (max-width: 450px) {
       .nav__item {
+        margin-top: 20px;
         margin-right: 10px; } }
   .nav__link {
     color: #000000; }
@@ -647,7 +652,7 @@ button, .button {
         margin-left: 0; } }
     .offer__appeal:before {
       position: absolute;
-      content: url("/img/sec-2/arrow.png");
+      content: url("../img/sec-2/arrow.png");
       width: 48px;
       height: 36px;
       left: -60px;
